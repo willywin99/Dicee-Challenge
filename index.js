@@ -14,3 +14,6 @@ document.getElementsByClassName('img2')[0].setAttribute('src', 'images/dice6.png
 // console.log(images);
 // images[0].src = 'images/dice6.png';
 // images[1].src = 'images/dice6.png';
+
+let randomNumber1 = Math.floor(Math.random() * 6 + 1);
+console.log(randomNumber1);
