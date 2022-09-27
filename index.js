@@ -7,7 +7,7 @@
 // document.getElementsByTagName('img')[0].setAttribute('src', 'images/dice6.png');
 // document.getElementsByTagName('img')[1].setAttribute('src', 'images/dice6.png');
 
-document.getElementsByClassName('img1')[0].setAttribute('src', 'images/dice6.png');
+let img1 = document.getElementsByClassName('img1')[0].setAttribute('src', 'images/dice6.png');
 document.getElementsByClassName('img2')[0].setAttribute('src', 'images/dice6.png');
 
 // let images = document.getElementsByTagName('img');
@@ -17,3 +17,8 @@ document.getElementsByClassName('img2')[0].setAttribute('src', 'images/dice6.png
 
 let randomNumber1 = Math.floor(Math.random() * 6 + 1);
 console.log(randomNumber1);
+
+// img1.setAttribute('src', `images/dice${randomNumber1}.png`);
+// img1.src = `images/dice${randomNumber1}.png`;
+
+document.getElementsByClassName('img1')[0].setAttribute('src', `images/dice${randomNumber1}.png`);
