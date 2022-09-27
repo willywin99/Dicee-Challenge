@@ -15,8 +15,8 @@ document.getElementsByClassName('img2')[0].setAttribute('src', 'images/dice6.png
 // images[0].src = 'images/dice6.png';
 // images[1].src = 'images/dice6.png';
 
-let randomNumber1 = Math.floor(Math.random() * 6 + 1);
-let randomNumber2 = Math.floor(Math.random() * 6 + 1);
+let randomNumber1 = Math.floor(Math.random() * 6) + 1;    // 1-6
+let randomNumber2 = Math.floor(Math.random() * 6) + 1;
 // console.log(randomNumber1);
 
 // img1.setAttribute('src', `images/dice${randomNumber1}.png`);
@@ -29,9 +29,9 @@ let heading = document.getElementsByTagName('h1');
 // console.log(heading[0].textContent);
 
 if ( randomNumber1 > randomNumber2) {
-  heading[0].textContent = `Player 1 Wins!`;
+  heading[0].textContent = `🚩 Player 1 Wins!`;
 } else if (randomNumber1 < randomNumber2) {
-  heading[0].textContent = `Player 2 Wins!`;
+  heading[0].textContent = `Player 2 Wins! 🚩`;
 } else {
   heading[0].textContent = `Draw!`;
 }
